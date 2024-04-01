@@ -1,0 +1,80 @@
+:root {
+    /* Pink */
+    --pink-light: #F3D9E1;
+    --pink-medium: #E7BFC8;
+    --pink-dark: #DAA6B1;
+
+    /* Grey */
+    --grey-light: #E0E0E0;
+    --grey-medium: #BDBDBD;
+    --grey-dark: #8C8C8C;
+
+    /* White */
+    --white: #FFFFFF;
+
+    /* Black */
+    --black: #000000;
+    }
+
+
+html body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; 
+}
+
+header {
+    border-bottom: 2px solid var(--grey-light);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero{
+    margin-top: 2rem;
+}
+
+.hero__title{
+    background-color: var(--pink-dark);
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.main-container{
+    border: 2px solid var(--grey-dark);
+    margin-top: 2rem;
+    height: 25rem;
+    width: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-container__drawing-square{
+    border: 1px solid var(--grey-dark);
+    flex-grow: 1;
+}
+
+
+
