@@ -6,7 +6,7 @@ let columns = gridSize[1]
 for(let i = 0; i < rows; i++){
     let row = document.createElement('div');
     row.classList.add("main-container__row");
-    mainContainer.appendChild(row)
+    mainContainer.appendChild(row);
     for(let i = 0; i < columns; i++){
         let column = document.createElement('div');
         column.classList.add("main-container__column");
@@ -14,7 +14,15 @@ for(let i = 0; i < rows; i++){
         column.addEventListener("mouseover", () => {
             column.style.backgroundColor = "black";
         })
-
     }
 }
+
+const clearCanvas  = document.getElementById("clear-canvas-btn");
+clearCanvas.addEventListener('click', () =>{
+    const allSquares = document.querySelectorAll(".main-container__column");
+    allSquares.forEach((square) => {
+        square.style.backgroundColor = "white";
+    })
+})
+
 
