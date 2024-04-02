@@ -1,6 +1,3 @@
-//TODO add tool tip to createCanvasBtn
-//TODO add gradiant instead of straight black
-
 function clearCanvas() {
     const allSquares = document.querySelectorAll(".main-container__column");
     allSquares.forEach((square) => {
@@ -28,8 +25,10 @@ function generateCanvas(size) {
             let column = document.createElement('div');
             column.classList.add("main-container__column");
             row.appendChild(column);
+            let squareOpacity = 0.1;
             column.addEventListener("mouseover", () => {
-                column.style.backgroundColor = "black";
+                squareOpacity += 0.2
+                column.style.backgroundColor = `rgba(0, 0, 0, ${squareOpacity})`;
             })
         }
     }
@@ -44,15 +43,7 @@ createCanvasBtn.addEventListener('click', () => {
     }
 })
 
-
 const clearCanvasBtn = document.getElementById("clear-canvas-btn");
 clearCanvasBtn.addEventListener('click', () =>{
     clearCanvas();
 })
-
-
-
-
-
-
-
