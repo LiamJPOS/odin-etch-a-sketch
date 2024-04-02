@@ -17,12 +17,11 @@
     }
 
 
-html body {
+html, body {
     height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -68,13 +67,23 @@ main{
     height: 25rem;
     width: 25rem;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.main-container__drawing-square{
+.main-container__row, .main-container__column{
     border: 1px solid var(--grey-dark);
     flex-grow: 1;
 }
+
+.main-container__row {
+    display: flex;
+}
+/* 
+.main-container__column:hover {
+    background-color: #000000;
+} */
+
+
 
 
 
