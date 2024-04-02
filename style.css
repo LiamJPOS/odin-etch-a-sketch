@@ -3,19 +3,15 @@
     --pink-light: #F3D9E1;
     --pink-medium: #E7BFC8;
     --pink-dark: #DAA6B1;
-
     /* Grey */
     --grey-light: #E0E0E0;
     --grey-medium: #BDBDBD;
     --grey-dark: #8C8C8C;
-
     /* White */
     --white: #FFFFFF;
-
     /* Black */
     --black: #000000;
     }
-
 
 html, body {
     height: 100%;
@@ -90,8 +86,3 @@ main{
 .main-container__row {
     display: flex;
 }
-
-
-
-
-
